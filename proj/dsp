@@ -1,0 +1,6 @@
+f=open('D:\split.txt');
+V=f.readline();
+S=V[2:len(V)-3].decode('utf-16').split();
+for i in range(0,len(S)):
+    print S[i];
+f.close();

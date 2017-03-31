@@ -1,0 +1,13 @@
+f=open('D:\help.txt');
+str=u'\u0B85\u0B86\u0B87\u0B88';
+print str;
+V=f.readline();
+if V[2:len(V)-3].decode('utf-16')==str:
+    print "1st";
+while 1:
+    V=f.readline();
+    if not V:
+        break;
+    if V[1:len(V)-3].decode('utf-16')==str:
+        print "found";
+f.close();
